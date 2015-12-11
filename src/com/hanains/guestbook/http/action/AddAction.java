@@ -17,7 +17,7 @@ public class AddAction implements Action {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
-		String password = request.getParameter("pass");
+		String password = request.getParameter("password");
 		String message = request.getParameter("message");
 
 		GuestbookVo vo = new GuestbookVo();

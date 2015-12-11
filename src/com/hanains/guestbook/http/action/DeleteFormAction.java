@@ -14,6 +14,8 @@ public class DeleteFormAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		String no = request.getParameter("no");
+		request.setAttribute("no", no);
 		HttpUtil.forwarding(request, response, "/WEB-INF/views/deleteform.jsp");
 	}
 

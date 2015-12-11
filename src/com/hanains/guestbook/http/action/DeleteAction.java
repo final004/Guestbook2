@@ -18,8 +18,9 @@ public class DeleteAction implements Action {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 		String noStr = request.getParameter("no");
-		
+
 		long no = Long.parseLong(noStr);
+	
 		String password = request.getParameter("password");
 		System.out.println(no +":"+ password);
 		
